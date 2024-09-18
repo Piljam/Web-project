@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a class="logo">WatcHGoods</a>
+              <a href="home.html" class="active">Home</a>
+              <a href="loc.html">Location</a>
+              <a href="#contact">Contact Us</a>
+              <a href="product.html">Products</a>
+              <a href="about.html">About</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+    </header>
+    <div class="container" style="background-color: #A2A2A2;">
+        <img src="image/producth.jpg" alt="" class="cover" height="533">
+        <h1 class="upper">NEED HELP?</h1>
+        <h1 class="centered" style="color:#fff;">CONTACT US</h1>
+    </div>
+    <section class="contact">
+      <div class="contact-container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Full Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fullname" name="fullname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">E-mail</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="Your E-mail..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="" style="color: #ccc">None</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something(max 50).." style="height:200px"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="check">
+            <input type ="checkbox" id="agreement" name="agreement">
+            <label>I agree to the terms of service</label>
+            </div>
+          <div class="row">
+            <button type="button" class="btn-submit" onclick="validateData()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container footer-1">
+        <div class="footer">
+          <div class="footer-heading">
+            <h2>Explore</h2>
+            <a href="">All watches</a>
+            <a href="">Contact Us</a>
+            <a href="">About</a>
+          </div>
+          <div class="footer-heading footer-2">
+            <h2>Info</h2>
+            <a href="">FAQ</a>
+            <a href="">Payment</a>
+            <a href="">Location</a>
+
+          </div>
+          <div class="footer-heading footer-3" >
+            <h2 class="">Social Media</h2>
+            <a href="">instagram</a>
+            <a href="">facebook</a>
+            <a href="">twitter</a>
+            <a href="">youtube</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Newsletter</h2>
+            <input type="email" placeholder="Enter your email" id="footer-email">
+            <input type="submit" id="footer-email-btn" value="sign up">
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="script/navbar.js"></script>
+  <script src="script/contact.js"></script>
+</body>
+</html>

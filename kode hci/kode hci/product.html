@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a class="logo">WatcHGoods</a>
+              <a href="home.html" class="active">Home</a>
+              <a href="loc.html">Location</a>
+              <a href="contact.html">Contact Us</a>
+              <a href="#about">Products</a>
+              <a href="about.html">About</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+    </header>
+    <div class="container">
+      <img src="image/wall.jpg" alt="" class="cover" height="402">
+      <h1 class="centered" style="color:#fff;">ALL PRODUCTS</h1>
+  </div>
+  <div class="main">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('rolex')"> Rolex</button>
+      <button class="btn" onclick="filterSelection('blanchpain')"> Blanchpain</button>
+      <button class="btn" onclick="filterSelection('patek')"> Patek Philip</button>
+      <button class="btn" onclick="filterSelection('sold')"> Sold</button>
+    </div>
+    
+    <div class="row">
+      <div class="column rolex sold">
+        <div class="content">
+          <img src="image/watch.png" alt="" style="width:100%">
+          <h4>Rolex</h4>
+          <p>Submariner - Black</p>
+          <p>$66,800</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+      <div class="column rolex">
+        <div class="content">
+        <img src="image/rolex1.png" alt="" style="width:100%">
+          <h4>Rolex</h4>
+          <p>Submariner Date</p>
+          <p>$20,200</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+      <div class="column rolex">
+        <div class="content">
+        <img src="image/rolex2.png" alt="" style="width:100%">
+          <h4>Rolex</h4>
+          <p>Datejust - Blue</p>
+          <p>$18,200</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="column blanchpain sold">
+        <div class="content">
+          <img src="image/blanchpain1.png" alt="" style="width:100%">
+          <h4>Blanchpain</h4>
+          <p>Fifty Fathoms</p>
+          <p>$22,200</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+      <div class="column blanchpain">
+        <div class="content">
+        <img src="image/blanchpain2.png" alt="" style="width:100%">
+          <h4>Blancpain</h4>
+          <p>Villeret Flyback</p>
+          <p>$8,200</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+      <div class="column blanchpain">
+        <div class="content">
+        <img src="image/blanchpain3.png" alt="" style="width:100%">
+          <h4>Blanchpain</h4>
+          <p>Villeret Mooonphase</p>
+          <p>$9,200</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+    
+      <div class="column patek">
+        <div class="content">
+          <img src="image/patek1.png" alt="" style="width:100%">
+          <h4>Patek</h4>
+          <p>Nautilus</p>
+          <p>$10,350</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+      <div class="column patek sold">
+        <div class="content">
+        <img src="image/patek2.png" alt="" style="width:100%">
+          <h4>Patek</h4>
+          <p>Grand Complications</p>
+          <p>$11,200</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+      <div class="column patek">
+        <div class="content">
+        <img src="image/patek3.png" alt="" style="width:100%">
+          <h4>Patek</h4>
+          <p>Aquanut</p>
+          <p>$18,200</p>
+          <button type="button" class="btn-submit" onclick="">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  <footer>
+    <div class="footer-container footer-1">
+      <div class="footer">
+        <div class="footer-heading">
+          <h2>Explore</h2>
+          <a href="">All watches</a>
+          <a href="">Contact Us</a>
+          <a href="">About</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2>Info</h2>
+          <a href="">FAQ</a>
+          <a href="">Payment</a>
+          <a href="">Location</a>
+
+        </div>
+        <div class="footer-heading footer-3" >
+          <h2 class="">Social Media</h2>
+          <a href="">instagram</a>
+          <a href="">facebook</a>
+          <a href="">twitter</a>
+          <a href="">youtube</a>
+        </div>
+        <div class="footer-email-form">
+          <h2>Newsletter</h2>
+          <input type="email" placeholder="Enter your email" id="footer-email">
+          <input type="submit" id="footer-email-btn" value="sign up">
+        </div>
+      </div>
+     </div>
+   </div>
+</footer>
+<script src="script/navbar.js"></script>
+<script src="script/product.js"></script>
+</body>
+</html>
